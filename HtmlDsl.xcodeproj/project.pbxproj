@@ -10,6 +10,7 @@
 		6ED10193239AE6430091947B /* HtmlDsl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED10189239AE6430091947B /* HtmlDsl.framework */; };
 		6ED10198239AE6430091947B /* HtmlDslTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED10197239AE6430091947B /* HtmlDslTests.swift */; };
 		6ED1019A239AE6430091947B /* HtmlDsl.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ED1018C239AE6430091947B /* HtmlDsl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ED101A4239AE6530091947B /* Html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED101A3239AE6530091947B /* Html.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		6ED10192239AE6430091947B /* HtmlDslTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HtmlDslTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED10197239AE6430091947B /* HtmlDslTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlDslTests.swift; sourceTree = "<group>"; };
 		6ED10199239AE6430091947B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ED101A3239AE6530091947B /* Html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Html.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				6ED1018C239AE6430091947B /* HtmlDsl.h */,
 				6ED1018D239AE6430091947B /* Info.plist */,
+				6ED101A3239AE6530091947B /* Html.swift */,
 			);
 			path = HtmlDsl;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					6ED10188239AE6430091947B = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					6ED10191239AE6430091947B = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED101A4239AE6530091947B /* Html.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		6ED1019E239AE6430091947B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SJMSRXG797;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonefimenko.HtmlDsl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		6ED1019F239AE6430091947B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SJMSRXG797;
@@ -388,6 +396,7 @@
 		6ED101A1239AE6430091947B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJMSRXG797;
 				INFOPLIST_FILE = HtmlDslTests/Info.plist;
@@ -406,6 +415,7 @@
 		6ED101A2239AE6430091947B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJMSRXG797;
 				INFOPLIST_FILE = HtmlDslTests/Info.plist;
